@@ -1,0 +1,106 @@
+* implement scrolling panel view for parts list (page up/down, not pixel scroll)
+* implement more ship parts
+	-- new category: shields
+	-- new category: cabin
+* drag and drop editor 
+	-- attach to ship logic: dont overlap? 
+* support for multiple ships
+	-- turn off destroyActiveOnBuild when this is true 
+* flight mode 
+	-- stars (or other background point of reference)
+	-- add particlesystem for thrusters
+* weapon system
+  -- visual weapon states (missle no ammo, gauss charging, lazer/cannon firing)
+	-- weapon groups, map keys->groups->weapons
+	-- missiles: 
+		> decouple 'projectile' from 'launcher'
+		> implement fire rate cooldown 
+		> damage target on hit
+* implement a reason to fly;
+  MISSION SYSTEM
+  -- navigation tutorial, fly between waypoints
+	-- shoot training targets
+	-- ferry people between stations
+	-- pick up cargo
+	-- rescue a distressed ship
+	FREE FLIGHT WORLD SIMULATION SYSTEM
+
+* fix bugs:
+  -- find bugs to fix
+  -- hangar editor: when re-attaching frame, make CoM dot top-most
+
+* possible gameplay fixes 
+	-- question: should 'x/y' joystick be relative to ship (current) or relative to mouse heading?
+
+WIP:
+* design test
+	-- test designs for 'capitol ship' 'large cargo ship' 'corvette' and 'fighter' types
+		> add parts for different ship classes as neccesary
+		> capitol ship:  huge, slow, much armor, many weapons (turrets? drone bays? shields?) ,wow
+		> large cargo: large, slow, massive cargo capacity
+		> corvette: avg capacity, multi role
+		> fighter: small, no cargo, no shields, some weapons, very maneuverable
+		
+		
+IMPLEMENTED:
+
+8/18/15
+* weapon damage
+	-- children of destroyed part float in space
+* hangar editor
+	-- add 'clear all parts' button
+* weapon system
+	-- missiles:
+		> damage target on hit
+
+8/16/15
+* video update: https://www.youtube.com/watch?v=hP4JC2ByVKE
+* ship model 
+	-- axis aligned bounding box   
+* weapon system
+	-- missiles:
+		> incorporate launcher position/rotation for offset
+
+8/15/15
+* weapon system
+	-- missiles:
+		> add ship velocity to firing velocity
+		> detect collision
+		> spawn explosion particle animation
+* implement more ship parts
+	-- new category: weapon
+* flight mode 
+	-- radar 'carrot' system to tell relative distance to objects
+
+8/9/15
+* flight mode
+	-- implemented 'breaks'  (hold 'x' key)
+
+8/6/15
+* fix - flight  
+	-- dbgLoseEngine is broken
+
+8/5/15
+* flight
+	-- change joystick input to linear ACCEL (instead of VEL)
+* fix - drag and drop editor
+ -- remove part
+* drag and drop editor 
+	-- handle 'first/single/root part' case 
+
+8/3/15
+* drag and drop editor
+	-- allow parts to attach from overlap (currently only the center of parts can be attached to other parts)
+	
+8/1/15
+* flight mode
+  -- zoom
+	-- scrolling
+
+7/26/15
+* blueprints
+  -- saving, loading
+
+7/25/15
+* flight mode
+  -- linear programming optimizer for thruster control

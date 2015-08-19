@@ -1,0 +1,107 @@
+<html>
+<head>
+    <!-- external libraries -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!--
+    <script src="https://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    -->
+    <!--<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/black-tie/jquery-ui.css">-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="css/images/favicon.png">
+    <script type="text/javascript">
+        //resolve jQuery-Prototype conflict on '$'
+        // call 'jQuery("stuff")' instead of '$("stuff")' for jQuery code
+        // or use jQuery-plugin style: (function( $ ) { $("stuff").derp(); })( jQuery );
+        jQuery.noConflict();
+    </script>
+    <style type="text/css"> body { margin: 0; padding: 0; color: #333333;
+        background-image:url(''); }
+    </style>
+    
+    <!-- external code -->
+    <script type="text/javascript" src="js/ext/uuid.js"></script>
+    <script type="text/javascript" src="js/ext/numeric-1.2.6.min.js"></script>
+    <!-- framework code -->
+    <script type="text/javascript" src="js/framework/Service.js"></script>
+    <script type="text/javascript" src="js/framework/Animation.js"></script>
+    <script type="text/javascript" src="js/framework/Application.js"></script>
+    <script type="text/javascript" src="js/framework/AudioManager.js"></script>
+    <script type="text/javascript" src="js/framework/NodeView.js"></script>
+        <script type="text/javascript" src="js/framework/ButtonView.js"></script>
+    <script type="text/javascript" src="js/framework/EventBus.js"></script>
+    <script type="text/javascript" src="js/framework/Graphics.js"></script>
+    <script type="text/javascript" src="js/framework/LoadingView.js"></script>
+    
+    <script type="text/javascript" src="js/framework/ParticleSystem.js"></script>
+    <script type="text/javascript" src="js/framework/PIDController.js"></script>
+    <script type="text/javascript" src="js/framework/Physics.js"></script>
+    <script type="text/javascript" src="js/framework/ResourceProvider.js"></script>
+    <script type="text/javascript" src="js/framework/SaveData.js"></script>
+    
+    <script type="text/javascript" src="js/framework/TiledMap.js"></script>
+    <script type="text/javascript" src="js/framework/Utility.js"></script>
+    <script type="text/javascript" src="js/framework/Vec2D.js"></script>
+        <!-- jquery html5 UI view classes -->
+    <script type="text/javascript" src="js/framework/BaseView.js"></script>
+    <script type="text/javascript" src="js/framework/FormDialog.js"></script>
+    <script type="text/javascript" src="js/framework/TextAreaDialog.js"></script>
+    <script type="text/javascript" src="js/framework/MenuView.js"></script>
+    
+    <!-- data resources -->
+    <script type="text/javascript" src="data/data.json"></script>
+
+    <!-- game code -->
+        <!-- model -->
+    <script type="text/javascript" src="js/model/SpaceZoneModel.js"></script>
+    <script type="text/javascript" src="js/model/ShipPartModel.js"></script>
+    <script type="text/javascript" src="js/model/ShipModel.js"></script>
+    <script type="text/javascript" src="js/model/HangarEditorModel.js"></script>
+    <script type="text/javascript" src="js/model/BlueprintSelectorModel.js"></script>
+    <script type="text/javascript" src="js/model/ShipPartFactory.js"></script>
+        <!-- view -->
+    <script type="text/javascript" src="js/view/SpaceZoneView.js"></script>
+    <script type="text/javascript" src="js/view/HangarEditorView.js"></script>
+    <script type="text/javascript" src="js/view/BlueprintSelectorView.js"></script>
+    <script type="text/javascript" src="js/view/ShipView.js"></script>
+          <!-- framework candidates -->
+    
+        <!-- controller -->
+    <script type="text/javascript" src="js/controller/ShipController.js"></script>
+    <script type="text/javascript" src="js/controller/GameStateController.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <script type="text/javascript">
+        jQuery( document ).ready( function(){
+            game_create();
+        });
+    </script>
+</head>
+
+<body>
+	Controls P1:(E,S,D,F) + Mouse
+	<center>
+    <!--
+    <script>
+      function pidin(element) {
+        if(event.keyCode == 13) {
+          EventBus.ui.dispatch({evtName:"pid", element:element.id, value:element.value });
+        }
+      }
+    </script>
+    <input id="p" type=text value="0" size=5 onkeydown="pidin(this);">
+    <input id="i" type=text value="0" size=5 onkeydown="pidin(this);">
+    <input id="d" type=text value="0" size=5 onkeydown="pidin(this);">
+    -->
+    
+<canvas id="content" width="1024" height="800" style="border:1px solid #000000;" tabindex="1">
+	
+</canvas>
+</center>
+
+</body>
+<hr>
+<a href="todo.txt" target="_window">Dev Log</a>
+</html>

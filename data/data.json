@@ -1,0 +1,13 @@
+var data = {
+	"shipParts":{
+		"t1":{ "name":"Thruster CS1", "category":"thruster", "mass":10, "maxThrust":100, "imageName":"gfx/part_thrusterSmall.png" },
+		"t2":{ "name":"Thruster CS2", "category":"thruster", "mass":30, "maxThrust":400, "imageName":"gfx/part_thrusterLarge.png" },
+		"f1":{ "name":"Frame Column Medium", "category":"frame", "mass":10, "imageName":"gfx/part_frameStraightLong.png", "mountable":true },
+		"r1":{ "name":"Reactor CS1", "category":"reactor", "mass":10, "imageName":"gfx/part_reactor.png" },
+		"c1":{ "name":"Apollo Cockpit", "category":"cockpit", "mass":10, "crew":2, "imageName":"gfx/part_cockpit.png" },
+		"b1":{ "name":"Cargobay CS1", "category":"cargobay", "mass":5, "volume":30, "imageName":"gfx/part_cargoMed.png" },
+		"m1":{ "name":"Dummy Fire", "category":"weapon", "weapCat":"missile", "mass":1, "imageName":"gfx/part_wpn_missle1.png"},
+		"l1":{ "name":"Medium Lazer", "category":"weapon", "weapCat":"lazer", "mass":3, "imageName":"gfx/part_wpn_lazer1.png"}
+	}
+}
+
